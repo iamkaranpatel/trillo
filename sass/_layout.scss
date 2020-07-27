@@ -1,0 +1,113 @@
+.container{
+    max-width: 110rem;
+    margin: 8rem auto;
+    background-color: var(--color-grey-light-1);
+    box-shadow: 0 2rem 6rem rgba(0,0,0,.3);
+    border-radius: .2rem;
+
+
+    @media only screen and(max-width:$bp-largest) {
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+}
+
+.header{
+    font-size: 1.4rem;
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-grey-light-2);
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width:$bp-smallest){
+        flex-wrap: wrap;
+        height: 10rem;
+        align-content: space-around;
+    }
+    
+}
+
+.content{
+    display: flex;
+    flex-direction: row; 
+
+    @media only screen and (max-width:$bp-middle){
+        flex-direction: column;
+    }
+  
+}
+
+.sidebar{
+ background-color: var(--color-grey-dark-1);
+ flex: 0 0 25%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+
+ @media only screen and (max-width:$bp-middle) {
+    // justify-content:space-evenly;
+    flex-direction: row;
+
+}
+ 
+}
+
+.hotel{
+    background-color: var(--color-white);
+    flex: 1;
+}
+
+.detail{
+    font-size: 1.4rem;
+    display: flex;
+    padding: 4.5rem;
+    background-color: var(--color-grey-light-1);
+    border-bottom: 1px solid var(--color-grey-light-2);
+
+    @media only screen and (max-width:$bp-middle) {
+        padding: 2rem;
+    }
+
+    @media only screen and (max-width:$bp-small) {
+        flex-direction: column;
+        padding: 3rem 6rem;
+        justify-content: space-around;
+    }
+
+}
+
+.description{
+    background-color: var(--color-white);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.4);
+    font-size: 1.4rem;
+    flex: 0 0 65%;
+    margin-right: 4.5rem;
+    padding: 2rem 3rem;
+    
+    border-radius: 3px;
+
+    @media only screen and (max-width:$bp-middle) {
+        padding: 1rem 2rem;
+        margin-right: 3rem;
+    }
+
+    @media only screen and (max-width:$bp-small) {
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+
+}
+
+.user-reviews{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   
+    
+}
